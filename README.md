@@ -14,5 +14,4 @@ crontab -e
 Remap the Code enum in file CustomTypes.cs to match your preffered bindings.
 Current bindings are set to number 1-6 which perfetcly match this keyboard: 
 
-![Keyboard Logo](/LightBulbApp/images/keyboard.png?raw=true)
-![alt text](/LightBulbApp/images/keyboard.png?raw=true)
+![Keyboard](/LightBulbApp/images/keyboard.jpg?raw=true)
