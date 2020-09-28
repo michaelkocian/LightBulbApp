@@ -81,12 +81,14 @@ namespace LightBulbApp
                         throw;
                     connectFirst = true;
                     logger.LogInformation("No keyboard found. Connecting blueooth device");
+                    await Task.Delay(5000);
                 }
                 catch (IOException e2)
                 {
                     if (e2.Message != "No such device")
                         throw;
                     connectFirst = true;
+                    await Task.Delay(1000);
                 }
                 catch (ShellException e3)
                 {
@@ -98,9 +100,9 @@ namespace LightBulbApp
                 catch (UnauthorizedAccessException e4)
                 {
                     logger.LogInformation("Waiting for file to be accessible " + e4.Message);
+                    await Task.Delay(1000);
                 }
 
-                await Task.Delay(1000);
             }
 
         }
