@@ -81,7 +81,7 @@ namespace LightBulbApp
                         throw;
                     connectFirst = true;
                     logger.LogInformation("No keyboard found. Connecting blueooth device");
-                    await Task.Delay(5000);
+                    await Task.Delay(2500);
                 }
                 catch (IOException e2)
                 {
@@ -95,7 +95,7 @@ namespace LightBulbApp
                     if (!e3.Message.Contains(bluetoothConnectCommand))
                         throw;
                     connectFirst = true;
-                    await Task.Delay(10000);
+                    await Task.Delay(2500);
                 }
                 catch (UnauthorizedAccessException e4)
                 {
